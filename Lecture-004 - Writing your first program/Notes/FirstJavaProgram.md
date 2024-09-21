@@ -75,7 +75,8 @@ System.out.println("Mai chala toh sbko current laga re!!!!");
 }
 }
 
-What are comments?
+# What are comments?
+
 Comments can be used to explain Java code, and to make it more readable.
 
 "Best use of comments is that you can comment the Bug in the program and the Bug will be resolved?" Wait, don't try this,I am just joking!
