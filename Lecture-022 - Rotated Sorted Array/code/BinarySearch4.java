@@ -5,7 +5,7 @@ public class BinarySearch4 {
         System.out.println(arr[index]);
         int index1 = maxElement(arr);
         System.out.println(arr[index1]);
-        int index2 = searchInRotatedArray(arr,66);
+        int index2 = searchInRotatedArray(arr,1);
         if(index2 == -1){
             System.out.println("Element does not exist");
         } else
