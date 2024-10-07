@@ -65,11 +65,6 @@ public class LinearSearch {
                 System.out.println("Found element at pos: " + ans[i][0] + "," + ans[i][1]);
             }
         }
-
-
-
-
-
     }
     public static void linearSearch2d(int arr[][], int target, boolean findLast){
         int outerIndex=-1;

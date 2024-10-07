@@ -8,7 +8,7 @@
 
 1. Assign a variable ans = -1.
 2. Find mid = (start + end) / 2
-   -> It may lead to overflow condition sometimes so to avoid it we user a different formula.
+   -> It may lead to overflow condition sometimes so to avoid it we use a different formula.
    mid = start + ((end - start) / 2)
 
 3. Check if the mid element is target or not.
@@ -16,13 +16,11 @@
    -> If it is not then check if the element is less than or greater than the mid element.
    -> If it is greater, then we discard the previous half by modifying start and mid.
    => start = mid + 1
-   => mid = start + ((end - start) / 2)
    -> If it is smaller, then we discard the next half by modifying end and mid.
    => end = mid - 1
-   => mid = start + ((end - start) / 2)
    -> Perform the same operation till start <= end.
 
-4. If at the end ans == -1, then the element was not present.
+4. If at the end ans == -1, then the element was not present else ans will be the resultant index.
 
 > Approach for Descending array ->
 
@@ -36,10 +34,8 @@
    -> If it is not then check if the element is less than or greater than the mid element.
    -> If it is greater, then we discard the next half by modifying end and mid.
    => end = mid - 1
-   => mid = start + ((end - start) / 2)
    -> If it is smaller, then we discard the previous half by modifying start and mid.
    => start = mid + 1
-   => mid = start + ((end - start) / 2)
    -> Perform the same operation till start <= end.
 
-4. If at the end ans == -1, then the element was not present.
+4. If at the end ans == -1, then the element was not present else ans will be the resultant index.
