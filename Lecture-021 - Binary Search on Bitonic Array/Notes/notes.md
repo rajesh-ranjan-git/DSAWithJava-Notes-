@@ -1,6 +1,6 @@
 # Bitonic Array
 
-An array elements are first in increasing order then decreasing order or vice versa. Here the element are strictly sorted with no duplicate element on each side. Overall in the array duplicates can be there but on the opposite sides.
+In Bitonic Array elements are first in increasing order then decreasing order or vice versa. Here the element are strictly sorted with no duplicate element on each side. Overall in the array duplicates can be there but on the opposite sides.
 Eg. : int arr[] = { 2, 4, 6, 8, 11, 16, 13, 11, 9, 4, 3, 2, 1 };
 
 Note -> It is also solved by Binary Search Algorithm.
@@ -16,8 +16,8 @@ Note -> Peak is also called Bitonic point, maximum element.
 
 1. Consider start and end elements as boundaries and perform below steps till start <= end.
 2. Find previous and next element.
-3. next = (mid+1)%arr.length
-4. prev = (mid-1 + arr.length)%arr.length
+3. next = (mid+1)%arr.length - This is done so that if the element is last element, then next points to the first element in array to avoid ArrayIndexOutOfBounds Exception.
+4. prev = (mid-1 + arr.length)%arr.length - This is done so that if the element is first element, then prev points to the last element in array to avoid ArrayIndexOutOfBounds Exception.
 5. We have to keep in mind that there is one unique property for peak element in Bitonic arrays i.e. peak element is greater than its prev as well as the next one.
 6. Check if mid is greater than both prev and next, if yes then this is the answer.
 7. If not then check which is greater than mid, prev or next.
